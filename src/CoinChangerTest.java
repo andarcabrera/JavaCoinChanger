@@ -13,5 +13,8 @@ public class CoinChangerTest extends TestCase {
 
     public void testCents() throws Exception {
         assertEquals(new ArrayList<Integer>() {{ add(1);}}, c.makeChange(1));
+        assertEquals(new ArrayList<Integer>() {{ add(1); add(1);}}, c.makeChange(2));
+
     }
 }
+
