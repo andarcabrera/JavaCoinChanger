@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a18da83-802e-4d77-a998-587620f82976" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoinChanger/CoinChangerTest$1.class" afterPath="$PROJECT_DIR$/out/production/CoinChanger/CoinChangerTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoinChanger/CoinChanger.class" afterPath="$PROJECT_DIR$/out/production/CoinChanger/CoinChanger.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoinChanger/CoinChangerTest.class" afterPath="$PROJECT_DIR$/out/production/CoinChanger/CoinChangerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoinChanger.java" afterPath="$PROJECT_DIR$/src/CoinChanger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoinChangerTest.java" afterPath="$PROJECT_DIR$/src/CoinChangerTest.java" />
     </list>
     <ignored path="CoinChanger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +32,12 @@
         <entry file="file://$PROJECT_DIR$/src/CoinChangerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1003#1012#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1310#1319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +46,8 @@
       <file leaf-file-name="CoinChanger.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CoinChanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30066815">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.3674833">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -506,7 +509,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454686223325</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pass test for 6">
+      <created>1454686274060</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1454686274060</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -522,17 +531,17 @@
     <history-entry file="CoinChangerTest - 2016.02.05 at 09h 31m 00s.xml">
       <configuration name="CoinChangerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CoinChangerTest_testCents - 2016.02.05 at 09h 25m 13s.xml">
-      <configuration name="CoinChangerTest.testCents" configurationId="JUnit" />
+    <history-entry file="CoinChangerTest - 2016.02.05 at 09h 31m 41s.xml">
+      <configuration name="CoinChangerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CoinChangerTest_testCents - 2016.02.05 at 09h 26m 05s.xml">
-      <configuration name="CoinChangerTest.testCents" configurationId="JUnit" />
+    <history-entry file="CoinChangerTest - 2016.02.05 at 09h 32m 41s.xml">
+      <configuration name="CoinChangerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CoinChangerTest_testCents - 2016.02.05 at 09h 26m 52s.xml">
-      <configuration name="CoinChangerTest.testCents" configurationId="JUnit" />
+    <history-entry file="CoinChangerTest - 2016.02.05 at 09h 33m 28s.xml">
+      <configuration name="CoinChangerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CoinChangerTest_testCents - 2016.02.05 at 09h 27m 03s.xml">
-      <configuration name="CoinChangerTest.testCents" configurationId="JUnit" />
+    <history-entry file="CoinChangerTest - 2016.02.05 at 09h 34m 11s.xml">
+      <configuration name="CoinChangerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CoinChangerTest_testCents - 2016.02.05 at 09h 27m 42s.xml">
       <configuration name="CoinChangerTest.testCents" configurationId="JUnit" />
@@ -577,7 +586,8 @@
     <MESSAGE value="test push to github" />
     <MESSAGE value="add failing test for a nickle" />
     <MESSAGE value="add test for 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test for 6" />
+    <MESSAGE value="pass test for 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="pass test for 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -599,18 +609,20 @@
     <entry file="file://$PROJECT_DIR$/src/CoinChangerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1003#1012#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1310#1319#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoinChanger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30066815">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.3674833">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

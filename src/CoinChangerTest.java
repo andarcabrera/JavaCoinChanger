@@ -33,6 +33,14 @@ public class CoinChangerTest {
     public void testNickle() {
         assertEquals(makeTestChange(5), c.makeChange(5));
         assertEquals(makeTestChange(5, 1), c.makeChange(6));
+        assertEquals(makeTestChange(5, 1, 1), c.makeChange(7));
+        assertEquals(makeTestChange(5, 1, 1, 1), c.makeChange(8));
+        assertEquals(makeTestChange(5, 1, 1, 1, 1), c.makeChange(9));
+    }
+
+    @Test
+    public void testDime() {
+        assertEquals(makeTestChange(10), c.makeChange(10));
     }
 
     public List makeTestChange(int... a) {
