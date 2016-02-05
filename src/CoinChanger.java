@@ -7,7 +7,7 @@ import java.util.List;
 public class CoinChanger {
     public List<Integer> makeChange(int amount) {
         ArrayList<Integer> change = new ArrayList<>();
-        if (amount == 5) {
+        if (amount >= 5) {
             change.add(5);
             amount -= 5;
         }
