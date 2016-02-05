@@ -1,23 +1,46 @@
-import junit.framework.TestCase;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * Created by andacabrera29 on 2/4/16.
  */
-public class CoinChangerTest extends TestCase {
+public class CoinChangerTest {
     private CoinChanger c;
 
-    protected void setUp() throws Exception {
+    @Before
+    public void setUp() throws Exception {
         c = new CoinChanger();
     }
 
-    public void testCents() throws Exception {
-        assertEquals(new ArrayList<Integer>() {{ add(1);}}, c.makeChange(1));
-        assertEquals(new ArrayList<Integer>() {{ add(1); add(1);}}, c.makeChange(2));
-        assertEquals(new ArrayList<Integer>() {{ add(1); add(1); add(1);}}, c.makeChange(3));
-        assertEquals(new ArrayList<Integer>() {{ add(1); add(1); add(1); add(1);}}, c.makeChange(4));
-        assertEquals(new ArrayList<Integer>() {{ add(5);}}, c.makeChange(5));
+    @Test
+    public void testCents() {
 
+        ArrayList<Integer> testArray = new ArrayList<Integer>() {{
+            add(1);
+        }};
+          assertEquals(makeTestChange(1), c.makeChange(1));
+          assertEquals(makeTestChange(1, 1), c.makeChange(2));
+          assertEquals(makeTestChange(1, 1, 1), c.makeChange(3));
+          assertEquals(makeTestChange(1, 1, 1, 1), c.makeChange(4));
+    }
+
+    @Test
+    public void testNickle() {
+        assertEquals(makeTestChange(5), c.makeChange(5));
+        assertEquals(makeTestChange(5, 1), c.makeChange(6));
+    }
+
+    public List makeTestChange(int... a) {
+        ArrayList<Integer> testChange = new ArrayList<Integer>();
+        for (int i=0; i<a.length; i++) {
+            testChange.add(a[i]);
+        }
+        return testChange;
     }
 }
 
