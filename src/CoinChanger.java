@@ -7,7 +7,12 @@ import java.util.List;
 public class CoinChanger {
     public List<Integer> makeChange(int amount) {
         ArrayList<Integer> change = new ArrayList<>();
-        if (amount ==10){
+        if (amount >= 25){
+            change.add(25);
+            amount -= 25;
+        }
+
+        if (amount >= 10){
             change.add(10);
             amount -= 10;
         }

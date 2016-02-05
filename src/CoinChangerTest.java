@@ -41,6 +41,15 @@ public class CoinChangerTest {
     @Test
     public void testDime() {
         assertEquals(makeTestChange(10), c.makeChange(10));
+        assertEquals(makeTestChange(10, 1), c.makeChange(11));
+        assertEquals(makeTestChange(10, 1, 1), c.makeChange(12));
+        assertEquals(makeTestChange(10, 5), c.makeChange(15));
+    }
+
+    @Test
+    public void testQuarter() {
+        assertEquals(makeTestChange(25), c.makeChange(25));
+        assertEquals(makeTestChange(25, 1), c.makeChange(26));
     }
 
     public List makeTestChange(int... a) {
